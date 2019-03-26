@@ -3,9 +3,9 @@ Description of our workshop where we mix Event Storming and Example mapping
 
 
 ## 1. Introduction (10’)
-  « on ne réexplique pas le BDD ;-) on dit juste qu’on veut leur montrer comment articuler 2 techniques très utiles : l’ES et l’EM
+  On ne réexplique pas le BDD ;-) on dit juste qu’on veut leur montrer comment articuler 2 techniques très utiles : l’ES et l’EM
   
- - Disclaimer : on ne va pas détailler chaque technique. Juste en faire le minimum pour que vous puissiez voir comment les 2 peuvent s’articuler entre-elles
+ - __Disclaimer :__ on ne va pas détailler chaque technique. Juste en faire le minimum pour que vous puissiez voir comment les 2 peuvent s’articuler entre-elles
  - Rappel : l’association est une idée de Bruno à la base, qui a été beaucoup reprise par Kenny avec qui on va faire un atelier à DDD EU
 
 ## 2.Event Storming round 1 (20’)
