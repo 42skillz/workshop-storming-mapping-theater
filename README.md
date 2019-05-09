@@ -1,5 +1,8 @@
 # Example mapping meet Event Storming
 
+*Material for workshop animation*
+
+*Thomas PIERRAIN & Bruno BOUCARD*
 
 ## Intro (5 minutes)
 - Hi! My name is ... and we are co-organizers of DDDFR and BDD Paris meetups. We are both coding and facilitating/coaching software production and developers for our customers
@@ -36,8 +39,9 @@
 - We had the idea of building a seat suggestion module that will provide them a set of seat suggestions for a given request. Hence, the customers will stop to hesitate too much -> speed up the process foe everyone
 - To do so, our seat suggestion algorithm should be able to suggest the best combination of seats. 
 
----
+
 xxxxxxxxx 30 minutes xxxxxxxxxx
+
 ---
 
 ## Round 2: identify the business rules we have on the wall (10 minutes)
@@ -68,9 +72,11 @@ xxxxxxxxx 30 minutes xxxxxxxxxx
 ## Conclusion (5 minutes)
 - Event storming : big picture or process level exploration
 - Example mapping : clarification of the business rules and invariants we found in the Event Storming so that everyone (the dev especially) have a clear vision of what to do through concrete examples. I.e.: what will be our next acceptance tests
-- The business case we used here is from Emily Bache code kata: Theater reservation
+- The business case we used here is __from Emily Bache code kata: Theater reservation__
 - Thank you!
 
----
 xxxxxxxxx 60 minutes xxxxxxxxxx
 
+---
+
+__All rights reserved: 42 skillz © 2018__
