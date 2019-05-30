@@ -62,10 +62,12 @@ xxxxxxxxx 40 minutes xxxxxxxxxx
 
 ---
 
-## Round 2: identify the business rules we have on the wall (10 minutes)
+## Round 2: identify the business rules we have on the wall (15 minutes)
 - Try to identify all the business rules we can have in our seat suggestion system
 - Put them as blue stickies
 - (Our rules:)
+
+```json
     - we should not suggest seats that are already reserved by another customer
     - offer seats nearer the front
     - offer seats nearer the middle of a row
@@ -73,27 +75,30 @@ xxxxxxxxx 40 minutes xxxxxxxxxx
     - parties of over 6 can be split into groups that sit together, with at least 2 in each group
     - avoid leaving single seats unbooked on a row.
     - as a last resort, offer seats that are not adjacent.
+```
 
-## Example mapping 101 (5 minutes)
+## Example mapping 101 (15 minutes)
 - When we need to start coding a feature, there are so many implicit things to be explicated, so many misunderstandings between the dev and the business, that asking for a concrete example is the safest way to go.
 - Example mapping is an awesome technique to identify business rules and what to do through concrete examples
 - No gherkin involved. Straight to the point, very efficient low ceremony technique
 - 4 kind of cards displayed as a pyramid : user story, business rules, concrete examples and questions
 
-## Round 3: Example mapping one business rule (10 minutes)
+## Round 3: Example mapping one business rule (15 minutes)
 - Do example mapping on 1 business rule or two
 - Start from the rule and find out at least :
     - One concrete example (green card) for its happy path
     - One concrete example for its unhappy path
 - Be as much as possible explicit
+- Tips: No matter if your examples arent compliant with all rules. __Firt aim of an example is understanding__. But, most them migth automated after. For those you should find examples that won't violated any other rule?
 
-## Conclusion (5 minutes)
+## Conclusion (10 minutes)
 - Event storming : big picture or process level exploration
 - Example mapping : clarification of the business rules and invariants we found in the Event Storming so that everyone (the dev especially) have a clear vision of what to do through concrete examples. I.e.: what will be our next acceptance tests
 - The business case we used here is __from Emily Bache code kata: Theater reservation__
 - Thank you!
+- Question?
 
-xxxxxxxxx 60 minutes xxxxxxxxxx
+xxxxxxxxx 105 minutes xxxxxxxxxx
 
 ---
 
