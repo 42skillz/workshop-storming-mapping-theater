@@ -6,41 +6,59 @@
 
 ## Intro (5 minutes)
 - Hi! My name is ... and we are co-organizers of DDDFR and BDD Paris meetups. We are both coding and facilitating/coaching software production and developers for our customers
-- This hands-on is a short version of a 1h30 hours workshop
-- Reason why we won’t describe our 2 favorite exploration techniques in details, but give you instead, the strict minimum for you to play with us today
+- We won’t describe our 2 favorite exploration techniques in details, but give you instead, the strict minimum for you to play with us today.
 - We will focus more on how we articulate those 2 techniques : Event Storming and Example Mapping
-- There are 4 tables. Every table will play a dev team that will have to build for us an MVP of a seat suggestion service dedicated to theater 
-
+- There are 4 tables. Every table will play a dev team that will have to build for us an MVP of a seat suggestion service dedicated to theater.
+- Please find yourself a group.
+ 
 
 ## Our need: (5 minutes)
-- We’ve been contacted by the major theater reservation platform in France so that we help them to improve the seat reservation process for their street corner desks; the ones we have in Paris and where we can buy tickets to see a play in a theater, usually the d-day, in a last minute discount context. 
+- We’ve been contacted by the major theater reservation platform in France so that we help them to __improve the seat reservation process for their street corner desks__; the ones we have in Paris and where we can buy tickets to see a play in a theater, usually the d-day, in a last minute discount context. 
 - Those desks usually have one people : the broker, that helps people to find the seats they want for a given show (i.e.  a play, a theater, a date / hour)
 
 
-## Event storming 101 (5 minutes)
+## Event storming 101 (10 minutes)
 - Visualization technique where we put domain events (as orange stickies) on a large wall so that we (the IT people) can spot what really matters for the business and when it does happen
 - When it does happen : the wall is a timeline. Every sticky put on your right happened after what you have on the left
-- A nice way to spot what is important for the biz and to spread a mental model across various people
+- A nice way to spot what is important for the biz and __to spread a mental model across various people__
 - Chaotic (on purpose)
 - Start with one orange sticky: an domain event is a fact, something that has already happened that matters to the business
-- E.g.: SeatSuggested, SeatSuggestionFailed
+- E.g.: __SeatSuggested__, SeatSuggestionFailed
 - You can start from the left or from the major outcome events in the right (and move backward). What happened before or after?
 
-## Round 1: Event storming our seat suggestion system (10 minutes)
+## Round 1: Event storming our Theater Ticket Office System (15 minutes)
 - Figure out what kind of domain events we should have for our use cases?
-- Starting point: the customer has already expressed which play he or she want to see, and how many people should be seated
+- Starting point: ___the customer has already expressed which show he or she want to buy tickets for__, and how many people should be seated
 - Orange stickies / domain events only
 - Try to see errors as events
 - Note for us: we should let figure out by themselves what is important (seat suggestion) and what is out of scope for us (play selection, seat reservation, payment)
 
+```json
+  - Ticket sold
+  - Reservation confirmed
+  - Seats reserved
+  - Payment succeded
+  - Payment failed
+  - Reservation canceled
+  - Reservation option timeout
+  - Reservation option set
+  - Suggestion chosen
+  - Auditorium Seating shown
+  - Seats Suggestions made
+  - (Seats) Suggestion requested
+  - Auditorium Seating retrieved
+  - Show identified
+  - ...
+```
+
 ## Round 1 wrap up (5 minutes)
-- Some of you asking us “why” have realized that what really matter to us was the seat suggestion module. 
+- Some of you asking us “why” have realized that ___what really matter to us was the seat suggestion module__. 
 - Currently: the customers are taking too much time to chose their seats on the broker’s  screen and we experienced situations where queues in the streets are getting longer and longer, and the broker are not always able to sell all the seats before a play is starting (it generates frustrations and lead to missing business opportunities)
 - We had the idea of building a seat suggestion module that will provide them a set of seat suggestions for a given request. Hence, the customers will stop to hesitate too much -> speed up the process foe everyone
-- To do so, our seat suggestion algorithm should be able to suggest the best combination of seats. 
+- To do so, our seat suggestion algorithm should be able to suggest __the best combination of seats__. 
 
 
-xxxxxxxxx 30 minutes xxxxxxxxxx
+xxxxxxxxx 40 minutes xxxxxxxxxx
 
 ---
 
